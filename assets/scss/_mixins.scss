@@ -36,3 +36,24 @@
     @content;
   }
 }
+
+
+//============= Fonts ==============//
+
+.font {
+  &-light {
+    font-weight: 300;
+  }
+  &-medium {
+    font-weight: 500;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+  &-black {
+    font-weight: 900;
+  }
+  &-italic {
+    font-style: italic;
+  }
+}
