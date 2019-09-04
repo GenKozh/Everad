@@ -1,0 +1,38 @@
+// =============== Variables ===============//
+
+// ============== BAM naming ===============//
+
+@mixin el($name) {
+  @at-root #{&}__#{$name} {
+    @content;
+  }
+}
+
+@mixin mod($name) {
+  @at-root #{&}--#{$name} {
+    @content;
+  }
+}
+
+// ============ Adaptive breakpoints ========//
+
+@mixin huge {
+  @media only screen and (max-width: 1350px) {
+    @content;
+  }
+}
+@mixin normal {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin phone {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
